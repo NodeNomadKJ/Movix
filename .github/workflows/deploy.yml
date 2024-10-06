@@ -3,7 +3,10 @@ name: Deploy Vite App to GitHub Pages
 on:
   push:
     branches:
-      - movix-dev  # Change this if your main branch is named differently
+      - movix-dev  # Change this to your deployment branch
+
+permissions:
+  contents: write  # Grant write permissions for repository contents
 
 jobs:
   deploy:
@@ -11,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -27,5 +30,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Token for authentication
+        publish_dir: ./dist  # Directory to publish
