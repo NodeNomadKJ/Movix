@@ -1,16 +1,13 @@
 {
-    "name": "assignment",
+    "name": "Movix",
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://NodeNomadKJ.github.io/Movix",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "host": "vite --host",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist" 
+        "host": "vite --host"
     },
     "dependencies": {
         "@emotion/react": "^11.11.1",
@@ -40,7 +37,6 @@
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.9",
         "@vitejs/plugin-react": "^3.0.0",
-        "gh-pages": "^6.1.1",
         "vite": "^4.0.0"
     }
 }
