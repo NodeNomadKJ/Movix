@@ -15,7 +15,7 @@ import SearchPage from "./pages/searchResult/SearchPage";
 import Login from "./pages/login/Login";
 import Signup from "./pages/login/Signup";
 import PrivateRoutes from "./utils/ProtectedRoutes";
-import Account from "./pages/Account/Account";
+import Account from "./pages/account/Account";
 
 function App() {
   const dispatch = useDispatch();
