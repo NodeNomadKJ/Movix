@@ -1,0 +1,48 @@
+@import "../../mixins.scss";
+
+.footernavbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    .contentWrapper {
+       width: 80%;
+    }
+    .menuItems {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+        .menuItem {
+            height: 55px;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            svg {
+              font-size: 38px;
+            }
+            cursor: pointer;
+          }
+          .menuItem:hover{
+            color: var(--pink);
+            
+          }
+          .active{
+            color: var(--pink);
+            
+          }
+          
+    }
+  
+
+  
+
+
+   
+}
+
+

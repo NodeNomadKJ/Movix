@@ -1,0 +1,21 @@
+@import "../../mixins.scss";
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        cursor: pointer;
+        img {
+            height: 50px;
+        }
+    }
+    }
+
+
+
