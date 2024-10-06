@@ -19,12 +19,12 @@ export default function Login() {
 
   const validateForm = () => {
     if (!email || !password) {
-      setError("All fields are required");
+      setError("All fields are required.");
       return false;
     }
 
     if (password.length < 8) {
-      setError("Password must be at least 8 characters long");
+      setError("Password must be at least 8 characters long.");
       return false;
     }
 
